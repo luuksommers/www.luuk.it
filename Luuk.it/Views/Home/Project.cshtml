@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+@model LuukitWebsite.Models.Project
+
+
+<ol>
+    <li>
+        @Html.LabelFor(a => a.ProgrammingLanguage)
+        @Html.DisplayFor(a => a.ProgrammingLanguage)
+    </li>
+    <li>
+        @Html.LabelFor(a => a.ShortDescription)
+        @Html.DisplayFor(a => a.ShortDescription)
+    </li>
+    <li>
+        @Html.LabelFor(a => a.Url)
+        <a href="@Model.Url">@Model.Url</a>
+    </li>
+</ol>
+
+@Images.DisplayImageList(Model.Images.Select(a=>Url.Content("~/Images/projects/") + a.Url), "Image of the project" )

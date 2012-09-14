@@ -1,0 +1,313 @@
+﻿html {
+    background: url(../images/bg.png);
+    color: #555;
+    font-weight: 100;
+    font-family: 'Roboto';
+}
+
+.center {
+    margin: 0 auto;
+    width: 900px;
+}
+
+#header {
+    font-weight: bold;
+    font-size: 8em;
+}
+
+nav ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+    nav ul li {
+        float: left;
+        list-style: none;
+    }
+
+.navigation {
+    height: 40px;
+    width: 90px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 20px;
+    color: #aaa;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+#projects-list {
+    width: 210px;
+    min-height: 300px;
+    float: left;
+}
+
+    #projects-list ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #projects-list ul li {
+            list-style: none;
+            width: 200px;
+            padding: 5px;
+        }
+
+        #projects-list ul li {
+            transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+        }
+
+            #projects-list ul li:hover, #projects-list ul li.selected {
+                background-color: #555;
+            }
+
+#project-details {
+    width: 650px;
+    min-height: 290px;
+    float: left;
+    border-left: 1px #555 solid;
+    padding: 5px;
+}
+
+    #project-details a {
+        text-decoration: none;
+        color: #aaa;
+        transition: all .2s ease-out;
+        -moz-transition: all .2s ease-out;
+        -webkit-transition: all .2s ease-out;
+        -o-transition: all .2s ease-out;
+    }
+
+        #project-details a:hover {
+            color: #34B4E3;
+        }
+
+    #project-details ol {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+        #project-details ol li {
+            padding-bottom: 5px;
+        }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #FFF;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: #CCC;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #AAA;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #888;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.image-list {
+    min-width: 650px;
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.image-list img {
+    height: 100px;
+    padding: 0px 10px 0px 0px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+}
+.project-images {
+    width: 300px;
+}
+
+.navigation.projects {
+    background: url(../images/icons/10-device-access-storage.png) 0px 2px no-repeat;
+    padding-left: 50px;
+}
+
+    .navigation.projects.active, .navigation.projects:hover {
+        background: url(../images/icons/highlight/10-device-access-storage.png) 0px 2px no-repeat;
+        color: #34B4E3;
+    }
+
+.navigation.about {
+    background: url(../images/icons/6-social-person.png) 0px 2px no-repeat;
+    padding-left: 50px;
+}
+
+    .navigation.about.active, .navigation.about:hover {
+        background: url(../images/icons/highlight/6-social-person.png) 0px 2px no-repeat;
+        color: #34B4E3;
+    }
+
+.navigation.connect {
+    background: url(../images/icons/6-social-add-group.png) 0px 2px no-repeat;
+    padding-left: 50px;
+}
+
+    .navigation.connect.active, .navigation.connect:hover {
+        background: url(../images/icons/highlight/6-social-add-group.png) 0px 2px no-repeat;
+        color: #34B4E3;
+    }
+
+#articles {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    min-height: 300px;
+    padding: 10px 10px;
+    color: #aaa;
+}
+
+#imagescroll img {
+    height: 100px;
+}
+
+#imagedescription {
+    min-height: 25px;
+}
+
+.follow {
+    display: block;
+    padding: 5px 5px 5px 30px;
+    transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    text-decoration: none;
+    color: #aaa;
+}
+
+    .follow:hover {
+        color: #34B4E3;
+    }
+
+    .follow.youtube {
+        background: url(../images/icons/youtube.png) 0px 2px no-repeat;
+    }
+
+    .follow.google {
+        background: url(../images/icons/google-plus.png) 0px 2px no-repeat;
+    }
+
+    .follow.blogger {
+        background: url(../images/icons/blogger.png) 0px 2px no-repeat;
+    }
+
+    .follow.github {
+        background: url(../images/icons/github.png) 0px 2px no-repeat;
+    }
+
+    .follow.stackoverflow {
+        background: url(../images/icons/stackoverflow.png) 0px 2px no-repeat;
+    }
+
+    .follow.linkedin {
+        background: url(../images/icons/linkedin.png) 0px 2px no-repeat;
+    }
+
+    .follow.steam {
+        background: url(../images/icons/button-white.png) 0px 2px no-repeat;
+    }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-Regular-webfont.eot');
+    src: url('../content/fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-Regular-webfont.woff') format('woff'), url('../content/fonts/Roboto-Regular-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-Italic-webfont.eot');
+    src: url('../content/fonts/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-Italic-webfont.woff') format('woff'), url('../content/fonts/Roboto-Italic-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-Italic-webfont.svg#RobotoItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-Bold-webfont.eot');
+    src: url('../content/fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-Bold-webfont.woff') format('woff'), url('../content/fonts/Roboto-Bold-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-Bold-webfont.svg#RobotoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-BoldItalic-webfont.eot');
+    src: url('../content/fonts/Roboto-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-BoldItalic-webfont.woff') format('woff'), url('../content/fonts/Roboto-BoldItalic-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-BoldItalic-webfont.svg#RobotoBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-Thin-webfont.eot');
+    src: url('../content/fonts/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-Thin-webfont.woff') format('woff'), url('../content/fonts/Roboto-Thin-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-Thin-webfont.svg#RobotoThin') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-ThinItalic-webfont.eot');
+    src: url('../content/fonts/Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-ThinItalic-webfont.woff') format('woff'), url('../content/fonts/Roboto-ThinItalic-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-Light-webfont.eot');
+    src: url('../content/fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-Light-webfont.woff') format('woff'), url('../content/fonts/Roboto-Light-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-Light-webfont.svg#RobotoLight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-LightItalic-webfont.eot');
+    src: url('../content/fonts/Roboto-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-LightItalic-webfont.woff') format('woff'), url('../content/fonts/Roboto-LightItalic-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-LightItalic-webfont.svg#RobotoLightItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-Medium-webfont.eot');
+    src: url('../content/fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-Medium-webfont.woff') format('woff'), url('../content/fonts/Roboto-Medium-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-Medium-webfont.svg#RobotoMedium') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../content/fonts/Roboto-MediumItalic-webfont.eot');
+    src: url('../content/fonts/Roboto-MediumItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../content/fonts/Roboto-MediumItalic-webfont.woff') format('woff'), url('../content/fonts/Roboto-MediumItalic-webfont.ttf') format('truetype'), url('../content/fonts/Roboto-MediumItalic-webfont.svg#RobotoMediumItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}

@@ -1,0 +1,7 @@
+﻿@helper DisplayImageList(IEnumerable<string> images, string alt = null) {
+    <div class="image-list">
+        @foreach(var image in images){
+            <img src="@image" alt="@alt" />
+        }
+    </div>
+}

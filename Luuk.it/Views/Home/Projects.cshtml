@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Projects";
+    ViewBag.ProjectsActive = "active";
+}
+
+@model IEnumerable<LuukitWebsite.Models.Project>
+
+<div id="projects-list">
+    <ul id="projects">
+        @foreach (var project in Model)
+        {
+    	    <li data-url="@Url.Action("Project", new{id=project.Id})">@project.Name<br />
+                @project.Year
+    	    </li>
+        }
+    </ul>
+</div>
+
+<div id="project-details">
+    Hoover the projects to view the details.
+</div>
