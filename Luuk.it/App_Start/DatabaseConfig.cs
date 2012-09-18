@@ -9,7 +9,7 @@ namespace Luuk.it
     {
         public static void RegisterDatabase()
         {
-            Database.SetInitializer<ProjectsContext>(null); //new DropCreateDatabaseAlways<ProjectsContext>()
+            Database.SetInitializer<ProjectsContext>(new CreateDatabaseIfNotExists<ProjectsContext>());
         }
     }
 }
