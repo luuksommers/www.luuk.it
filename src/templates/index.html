@@ -1,0 +1,46 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="divider"></div>
+<h1>I've worked on the following projects</h1>
+<div id="projects">
+	<div class="project">
+		<a href="http://www.oswos.net" style="background-image:url({{ STATIC_URL }}img/projects/oswos.png)"></a>
+		<h3>Oswos</h3>
+		Open Source Web OWIN Server, project I started to host websites on a slow netbook.
+	</div>
+	<div class="project">
+		<a href="http://www.theooptiek.nl" style="background-image:url({{ STATIC_URL }}img/projects/theooptiek.png)"></a>
+		<h3>Theo Optiek</h3>
+		A friend of mine knew a company which needed a new webshop. (not live yet)
+	</div>
+	<div class="project">
+		<a href="http://www.woneninzwaluwpark.nl" style="background-image:url({{ STATIC_URL }}img/projects/woneninzwaluwpark.png)"></a>
+		<h3>Wonen in ZwaluwPark</h3>
+		I decided to build a website for our new appartment, which is build in 2012.
+	</div>
+	<div class="project">
+		<a href="http://www.marionspijkerman.nl" style="background-image:url({{ STATIC_URL }}img/projects/marionspijkerman.png)"></a>
+		<h3>Marion Spijkerman</h3>
+		For my girlfriend who loves to paint. Check it out!
+	</div>
+</div>
+<div class="divider"></div>
+<div id="aboutme">
+<h1>About me</h1>
+I'm <strong>Luuk Sommers</strong>, born in '83 and I've been a <strong>Developer</strong> for more than 12 years. 
+You can see my work in the above. I have a <strong>hi-tech</strong> home office in <strong>Arnhem</strong>.
+
+<p>My current development machine is a <strong>Core i7 3770K</strong> with <strong>16GB memory</strong>.<br />
+I type on a <strong>das keyboard</strong> (with most of my fingers ;)) while sitting on a <strong>Humanscale Freedom Chair</strong>.</p>
+
+<p>In my spare time I like to listen to <strong>music</strong> and read <strong>books</strong>.</p>
+
+<div id="imagescroll">
+    <img src="{{ STATIC_URL }}img/about/IMG_3530.JPG" data-text="Kopenhagen nice as always" />
+    <img src="{{ STATIC_URL }}img/about/IMG_3201.JPG" data-text="Cold in Apeldoorn" />
+    <img src="{{ STATIC_URL }}img/about/IMG_3465.JPG" data-text="I love the cookies my girlfriend bakes" />
+    <img src="{{ STATIC_URL }}img/about/IMG_3663.JPG" data-text="I said I loooooooove music" />
+</div>
+<div id="imagedescription">
+</div>
+{% endblock %}

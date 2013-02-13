@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Luuk.it</title>
+    <meta name="keywords" content="luuk sommers digitalhardc0r3 developer oswos" />
+    <meta name="description" content="Luuk Sommers, a developer-to-the-bone" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="{{ STATIC_URL }}css/site.min.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="{{ STATIC_URL }}css/jquery.ui.all.css" type="text/css" rel="stylesheet" media="screen" />
+    <meta name="google-site-verification" content="gTRG8YXGYAlw5Sfrsu5LQCC9kSeVhF_LRmkBzFF9e24" />
+</head>
+<body>
+    <header id="header">
+        <div class="connect-bar">
+            <ol>
+                <li><a class="connect google" href="https://plus.google.com/115803110558966062326">Google+</a></li>
+                <li><a class="connect twitter" href="https://twitter.com/LuukSommersNL">Twitter</a></li>
+                <li><a class="connect linkedin" href="http://nl.linkedin.com/in/luuksommers">Linked In</a></li>
+                <li><a class="connect github" href="https://github.com/luuksommers">GitHub</a></li>
+                <li><a class="connect stackoverflow" href="http://careers.stackoverflow.com/luuksommers">Stack Overflow Careers</a></li>
+                <li class="level1"><a class="connect blogger" href="http://sameproblemmorecode.blogspot.nl/">Same problem, more code blog</a></li>
+                <li class="level1"><a class="connect youtube" href="http://www.youtube.com/digitalhardc0r3">YouTube</a></li>
+                <li><a class="connect more" href="#" id="more">More<span class="gbma"></span></a>
+                    <div id="connect-more-list">
+                        <ol>
+                            <li><a class="connect blogger" href="http://sameproblemmorecode.blogspot.nl/">Same problem, more code blog</a></li>
+                            <li><a class="connect youtube" href="http://www.youtube.com/digitalhardc0r3">YouTube</a></li>
+                        </ol>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </header>
+
+    <div class="center">
+        <div id="commandLine">
+            <span style="color: #34B4E3">&gt;</span>Luuk.it
+        </div>
+
+        <section id="articles">
+            {% block content %}{% endblock %}
+        </section>
+        <footer>
+            <img src="{{ STATIC_URL }}img/madeinarnhem.png" />
+        </footer>
+    </div>
+
+    <script src="{{ STATIC_URL }}js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/luukit.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-11419816-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+</script>
+</body>
+</html>
