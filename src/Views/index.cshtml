@@ -1,0 +1,166 @@
+﻿@*@using SquishIt.Framework*@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Luuk Sommers is an awesome developer">
+    <meta name="author" content="Luuk Sommers">
+
+    <title>Luuk Sommers</title>
+
+    @*@Html.Raw(Bundle.Css().RenderCachedAssetTag("styles"))*@
+    <link href="@Url.Content("~/assets/css/styles")" rel="stylesheet" type="text/css">
+    <!-- Custom Fonts -->
+    <link href="@Url.Content("~/font-awesome-4.1.0/css/font-awesome.min.css")" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Coding
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Luuk Sommers</h1>
+                        <p class="intro-text">hardcore .net development.<br>Currently running on ASP.NET vNext, Nancy, IIS8.5 and OWIN.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About</h2>
+                <p>
+                    Hi, I'm Luuk Sommers <a href="http://en.wikipedia.org/wiki/1983">31 years old</a> and I've been a developer for more than 14 years. I love programming in c# and optimizing stuff.
+                    I'm a big fan of <a href="http://www.google.com/">google</a> and everything they do to make our daily life just a bit better.
+                </p>
+
+                <p>
+                    My current machine is a <a href="http://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-3770K+%40+3.50GHz">Core i7 3770K</a> with 16GB memory running <a href="http://windows.microsoft.com/en-us/windows-8/meet">windows 8.1</a>.
+                    I type on a <a href="http://www.daskeyboard.com/model-s-professional/">das keyboard</a> (with most of my fingers ;)) while sitting on a <a href="http://www.humanscale.com/products/product_detail.cfm?group=FreedomTaskChairWithHeadrest">humanscale freedom chair</a>.
+                </p>
+
+                <p>In my spare time I like to listen to <a href="https://www.facebook.com/ModernLifeIsWarOfficial">music</a> and read <a href="http://coupland.com/">books</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
+                <p>Feel free to contact me on one of the following sites!</p>
+                @*<p>
+                        <a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                    </p>*@
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://plus.google.com/+LuukSommers/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus"></i><span class="network-name">Google+</span></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/LuukSommersNL" class="btn btn-default btn-lg"><i class="fa fa-twitter"></i><span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/luuksommers" class="btn btn-default btn-lg"><i class="fa fa-github"></i><span class="network-name">GitHub</span></a>
+                    </li>
+                    <li>
+                        <a href="http://stackoverflow.com/users/288170/luuk" class="btn btn-default btn-lg"><i class="fa fa-stack-overflow"></i><span class="network-name">Stack Overflow</span></a>
+                    </li>
+                    <li>
+                        <a href="http://sameproblemmorecode.blogspot.nl/" class="btn btn-default btn-lg"><i class="fa fa-share-alt"></i><span class="network-name">Blogger</span></a>
+                    </li>
+                    <li>
+                        <a href="http://careers.stackoverflow.com/luuksommers" class="btn btn-default btn-lg"><i class="fa fa-stack-exchange"></i><span class="network-name">SO Careers</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/digitalhardc0r3" class="btn btn-default btn-lg"><i class="fa fa-youtube"></i><span class="network-name">Youtube</span></a>
+                    </li>
+                    <li>
+                        <a href="http://steamcommunity.com/id/digitalhardc0r3" class="btn btn-default btn-lg"><i class="fa fa-steam"></i> <span class="network-name">Steam</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+@*
+    <!-- Map Section -->
+    <div id="map"></div>
+*@
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Template build by <a href="http://startbootstrap.com/template-overviews/grayscale/">Start Bootstrap</a></p>
+        </div>
+    </footer>
+    @*
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTrzjcHmbPtnS4LmU0F_SiKgGg5vMR_64&sensor=false"></script>
+    *@
+
+    @*@Html.Raw(Bundle.JavaScript().RenderCachedAssetTag("scripts"))*@
+    
+    <script src="@Url.Content("~/assets/js/scripts")" type="text/javascript"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-11419816-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
