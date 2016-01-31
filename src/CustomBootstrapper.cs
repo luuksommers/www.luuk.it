@@ -5,8 +5,9 @@ using Nancy.TinyIoc;
 using SquishIt.Framework;
 using System.Collections.Generic;
 using Nancy.ViewEngines;
-using LuukIt_vNext;
+using LuukIt;
 using System.IO;
+using Microsoft.Extensions.PlatformAbstractions;
 
 namespace LuukIt
 {
@@ -46,7 +47,12 @@ namespace LuukIt
 
     public class NancyPathTranslator : IPathTranslator, IRootPathProvider
     {
-        private string BasePath = Startup.Environment.ApplicationBasePath;
+        private string BasePath = PlatformServices.Default.Application.ApplicationBasePath;
+
+        public string BuildAbsolutePath(string siteRelativePath)
+        {
+            return BasePath;
+        }
 
         public string GetRootPath()
         {

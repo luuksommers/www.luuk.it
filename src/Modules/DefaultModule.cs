@@ -1,6 +1,6 @@
 ﻿using System;
 using Nancy;
-using LuukIt_vNext;
+using LuukIt;
 
 namespace LuukIt.Modules
 {
